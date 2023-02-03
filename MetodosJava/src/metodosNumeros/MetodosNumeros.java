@@ -60,8 +60,8 @@ public class MetodosNumeros {
 	 */
 	public static int devuelveCuantosElementosArray(int... numeros) {
 		return (int) Arrays.stream(numeros).count();
-		
 	}
+	
 	
 	
 	
@@ -75,7 +75,7 @@ public class MetodosNumeros {
 		System.out.println(devuelveNumeroMaximo(12, 48, 98, 14, 30));
 		System.out.println(sumaNumerosEnteros(1, 1, 1));
 		System.out.println(devuelveCuantosElementosArray(2,45,3,5,4));
-
+		
 	}
 
 }
