@@ -38,16 +38,6 @@ public class MetodosStrings {
 		
 	}
 	
-	public static void separaCadena(String cadena, String separador) {
-
-		String[] partes = cadena.split(separador); // partes[0] = "111", partes[1]="Fran"...
-		System.out.println(partes[1] + " tiene " + partes[4] + " euros");
-	}
-
-	
-	
-	
-	
 	/**
 	 * Método que ordena Strings de la 'z' a la 'a'. * @param cadenas
 	 */
@@ -56,9 +46,27 @@ public class MetodosStrings {
 		for (String cadena : cadenas) {
 			System.out.println(cadena);
 		}
+	
+	}
+	
+	/**
+	 * Método que separa una cadena de texto 
+	 * @param cadena
+	 * @param separador
+	 */
+	public static void separaCadena(String cadena, String separador) {
+		String[] partes = cadena.split(separador); // partes[0] = "111", partes[1]="Fran"...
+		System.out.println(partes[1] + " tiene " + partes[4] + " euros");
 	}
 
 	
+	
+	
+	
+	
+		
+		
+		
 	
 	
 	
