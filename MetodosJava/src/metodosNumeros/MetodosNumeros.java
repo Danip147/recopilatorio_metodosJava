@@ -61,9 +61,11 @@ public class MetodosNumeros {
 	public static int devuelveCuantosElementosArray(int... numeros) {
 		return (int) Arrays.stream(numeros).count();
 	}
-	
+	/**
+	 * Método que ordena de menor a mayor números enteros de un array
+	 * @param numeros
+	 */
 	public static void ordenarNumeros(int...numeros) {
-		
 		Arrays.sort(numeros);
 		for(int numero : numeros) {
 			System.out.println(numero);
