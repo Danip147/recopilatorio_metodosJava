@@ -62,6 +62,18 @@ public class MetodosNumeros {
 		return (int) Arrays.stream(numeros).count();
 	}
 	
+	public static void ordenarNumeros(int...numeros) {
+		
+		Arrays.sort(numeros);
+		for(int numero : numeros) {
+			System.out.println(numero);
+		}
+		
+		
+		
+		
+	}
+	
 	
 	
 	
@@ -70,11 +82,12 @@ public class MetodosNumeros {
 	
 	
 	public static void main(String[] args) {
-		buscarNumeroEnArray(1, 8, 4, 6, 2, 10);
+		/*buscarNumeroEnArray(1, 8, 4, 6, 2, 10);
 		System.out.println(devuelveMediaNumeros(2.45, 8.24, 3.2, 95.4));
 		System.out.println(devuelveNumeroMaximo(12, 48, 98, 14, 30));
 		System.out.println(sumaNumerosEnteros(1, 1, 1));
-		System.out.println(devuelveCuantosElementosArray(2,45,3,5,4));
+		System.out.println(devuelveCuantosElementosArray(2,45,3,5,4));*/
+		ordenarNumeros(15,78,35,64,20);
 		
 	}
 
