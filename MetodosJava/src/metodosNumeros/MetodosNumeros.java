@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.OptionalDouble;
 
 public class MetodosNumeros {
-	
+
 	/**
 	 * Método que le pasas un arrays de números enteros y los suma.
 	 * 
@@ -54,43 +54,50 @@ public class MetodosNumeros {
 	}
 
 	/**
-	 * Método que le pasas un número indeterminado de números y te dice cuantos elementos hay
+	 * Método que le pasas un número indeterminado de números y te dice cuantos
+	 * elementos hay
+	 * 
 	 * @param numeros
 	 * @return
 	 */
 	public static int devuelveCuantosElementosArray(int... numeros) {
 		return (int) Arrays.stream(numeros).count();
 	}
+
 	/**
 	 * Método que ordena de menor a mayor números enteros de un array
+	 * 
 	 * @param numeros
 	 */
-	public static void ordenarNumeros(int...numeros) {
+	public static void ordenarNumeros(int... numeros) {
 		Arrays.sort(numeros);
-		for(int numero : numeros) {
+		for (int numero : numeros) {
 			System.out.println(numero);
 		}
-		
-		
-		
-		
+
 	}
-	
-	
-	
-	
+
+	/**
+	 * Genera numero aleatorio entre un minimo y un maximo introducido por parametro
+	 */
+	public static int generaNumeroAleatorio(int minimo, int maximo) {
+		return (int)Math.floor(Math.random()*(minimo-(maximo+1))+(maximo+1));
+}
+
 	
 	
 	
 	
 	public static void main(String[] args) {
-		/*buscarNumeroEnArray(1, 8, 4, 6, 2, 10);
-		System.out.println(devuelveMediaNumeros(2.45, 8.24, 3.2, 95.4));
-		System.out.println(devuelveNumeroMaximo(12, 48, 98, 14, 30));
-		System.out.println(sumaNumerosEnteros(1, 1, 1));
-		System.out.println(devuelveCuantosElementosArray(2,45,3,5,4));*/
-		ordenarNumeros(15,78,35,64,20);
-		
+		/*
+		 * buscarNumeroEnArray(1, 8, 4, 6, 2, 10);
+		 * System.out.println(devuelveMediaNumeros(2.45, 8.24, 3.2, 95.4));
+		 * System.out.println(devuelveNumeroMaximo(12, 48, 98, 14, 30));
+		 * System.out.println(sumaNumerosEnteros(1, 1, 1));
+		 * System.out.println(devuelveCuantosElementosArray(2,45,3,5,4));
+		 */
+		ordenarNumeros(15, 78, 35, 64, 20);
+
 	}
 
 }
